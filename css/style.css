@@ -1,11 +1,11 @@
 .top-menu {
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(137, 255, 27);
     overflow: hidden;
 }
 
 .top-menu a {
     float: left;
-    color: rgb(77, 147, 218);
+    color: rgb(255, 0, 0);
     text-align: center;
     padding: 15px;
     text-decoration: none;
@@ -13,11 +13,79 @@
 }
 
 .top-menu a:hover {
-    background-color: #000;
-    color: #fff
+    background-color: rgb(251, 255, 0);
+    color: rgb(0, 102, 255)
 }
 
 .top-menu a.active {
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(255, 0, 0);
     color: black;
+}
+
+
+.p-about-me {
+    color: red;
+    background-color: blue;
+    font-family: MS Gothic;
+}
+
+.main-about-me {
+    font-family: MS Gothic;
+    /*background-color: rgb(128, 0, 128);*/
+    background-image: url("https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
+}
+
+.main-projects {
+    font-family: MS Gothic;
+    background-image: repeating-linear-gradient(to right, grey, rgb(200, 200, 200))
+}
+
+.a-project {
+    color:rgb(0, 238, 255);
+}
+
+.main-resume {
+    font-family: MS Gothic;
+    background-image: linear-gradient(rgb(0, 0, 128), rgb(0, 0, 255));
+}
+
+.strokes {
+    -webkit-text-stroke: 1.5px rgb(104, 226, 104);
+}
+
+.main-blog {
+    font-family: MS Gothic;
+    background-image: linear-gradient(to bottom, grey, rgb(180, 180, 180));
+}
+
+.headshot-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 150px;
+  border-color: honeydew;
+  border-width: 100px;
+}
+
+
+.main-contact {
+    font-family: MS Gothic;
+    background-color: rgb(255, 187, 0);
+}
+
+
+/*.form-contact {
+    background-color: burlywood;
+    width: 50%;
+    overflow:unset; --> FIGURE OUT LATER 
+}*/
+
+.textarea-form {
+    height: 250px;
+}
+
+.abovement {
+    vertical-align: middle;
 }

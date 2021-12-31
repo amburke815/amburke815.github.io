@@ -6,7 +6,7 @@
         <link rel="stylesheet", href="../css/style.css">
     </head>
     
-    <body>
+    <body class="main-contact">
         <div class="top-menu">
             <a href="../index.html">About Me</a>
             <a href="projects.html">Projects</a>
@@ -20,5 +20,34 @@
             <a href="mailto:burke.ad@northeastern.edu">burke.ad@northeastern.edu</a><br>
             <a href="https://github.com/amburke815">github.com/amburke815</a>
         </address>
+
+        <form class="form-contact" action="contact-form.php" method="post">
+            <div class="elem-group">
+                <label for="name">Your Name: </label>
+                <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+                <label for="email">Your E-mail Address: </label>
+                <input type="text" id="email" name="visitor-email" placeholder="jdoe@mail-website.com" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+                <label for="who-are-you">Who are you?</label>
+                <select id="who-are-you" name="visitor-type" required>
+                    <option value="">Select one...</option>
+                    <option value="employer">Employer</option>
+                    <option value="peer">Peer</option>
+                    <option value="collaborator">Collaborator</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="elem-group">
+                <div class="abovement">
+                    <label for="message">Message</label>
+                    <textarea class="textarea-form" id="message" name="visitor_message" placeholder="Please feel free to reach out to me!" required></textarea>
+                </div>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
     </body>
 </html>
