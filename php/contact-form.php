@@ -1,8 +1,7 @@
 <?php
 
 if($_POST) {
-    echo("<p>php triggered</p>");
-    echo "<p>php triggered!</p>";
+
     $visitor_name = "";
     $visitor_email = "";
     $visitor_type = "";
@@ -18,7 +17,7 @@ if($_POST) {
 
     if (isset($_POST['visitor_email'])) {
         // $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
-        $visitor_email = filter_var($_POST['visitor_email'], FILTER_VALIDATE_EMAIL); // filter_var($_POST['visitor_email'], FILTER_VALIDATE_STRING);
+        $visitor_email = "amburke815@gmail.com" // filter_var($_POST['visitor_email'], FILTER_VALIDATE_EMAIL); // filter_var($_POST['visitor_email'], FILTER_VALIDATE_STRING);
         $email_body .= "<div>\n
         \t<label><b>Visitor Email:</b></label>&nbsp;<span>'.$visitor_email.'</span>\n
         <div>\n";
