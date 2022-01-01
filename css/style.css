@@ -89,3 +89,27 @@
 .abovement {
     vertical-align: middle;
 }
+
+.project {
+    background-color: white;
+    border-style:inset;
+    margin: 40px;
+    box-shadow: 5px 10px black;
+    
+
+}
+
+.project-header {
+    font-style:oblique;
+    border-bottom-style:double;
+    /*background-image: linear-gradient(black, white, green);*/
+
+    background-color: #b6b4b4;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-fish-skin.png");
+
+    text-shadow: -.5px -.5px 0 rgb(255, 255, 255), .5px -.5px 0 rgb(255, 255, 255), -.5px .5px 0 rgb(255, 255, 255), .5px .5px 0 rgb(255, 255, 255);
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 0px;
+}
